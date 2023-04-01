@@ -14,5 +14,5 @@ variable "domain" {
 }
 
 variable "namespace" {
-    description = "Namespace to deploy"
+  description = "Namespace to deploy"
 }

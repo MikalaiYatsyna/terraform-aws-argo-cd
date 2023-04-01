@@ -16,7 +16,7 @@ resource "tls_cert_request" "dex_server_cert_request" {
     "argocd-server.${var.namespace}.svc.cluster.local"
   ]
   ip_addresses = [
-      "127.0.0.1"
+    "127.0.0.1"
   ]
 }
 

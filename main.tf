@@ -7,7 +7,7 @@ resource "helm_release" "argo_cd" {
   chart      = "argo-cd"
   name       = "argo-cd"
   namespace  = var.namespace
-  atomic = true
+  atomic     = true
   values = [
     yamlencode({
       fullNameOverride = "argo-cd"
@@ -22,25 +22,25 @@ resource "helm_release" "argo_cd" {
       }
       repoServer = {
         autoscaling = {
-          enabled = true
+          enabled     = true
           minReplicas = 2
         }
       }
       applicationSet = {
         autoscaling = {
-          enabled = true
+          enabled     = true
           minReplicas = 2
         }
       }
       server = {
         autoscaling = {
-          enabled: true
-          minReplicas: 2
+          enabled : true
+          minReplicas : 2
         }
         ingress = {
           enabled = true
           hosts = [
-              local.ingress_host
+            local.ingress_host
           ]
           paths = [
             "/"
