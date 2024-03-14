@@ -49,6 +49,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_argo_cd_version"></a> [argo\_cd\_version](#input\_argo\_cd\_version) | Argo CD chart version. | `string` | `"argo-cd-6.7.1"` | no |
 | <a name="input_certificate_issuer"></a> [certificate\_issuer](#input\_certificate\_issuer) | Cert manager issuer name for Ingress certificate | `string` | n/a | yes |
 | <a name="input_cluster_name"></a> [cluster\_name](#input\_cluster\_name) | Name of EKS cluster | `string` | n/a | yes |
 | <a name="input_domain"></a> [domain](#input\_domain) | Application domain name | `string` | n/a | yes |
