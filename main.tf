@@ -6,7 +6,7 @@ resource "helm_release" "argo_cd" {
   repository = "https://argoproj.github.io/argo-helm"
   chart      = "argo-cd"
   name       = "argo-cd"
-  version    = var.argo_cd_version
+  version = var.argo_cd_version
   namespace  = var.namespace
   atomic     = true
   values = [

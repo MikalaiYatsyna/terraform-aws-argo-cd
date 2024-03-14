@@ -1,7 +1,7 @@
 variable "argo_cd_version" {
-  type        = string
+  type = string
   description = "Argo CD chart version."
-  default     = "argo-cd-6.7.1"
+  default = "argo-cd-6.7.1"
 }
 variable "cluster_name" {
   type        = string
