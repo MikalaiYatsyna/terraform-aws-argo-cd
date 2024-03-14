@@ -4,7 +4,13 @@ Terraform module to provision Argo CD on EKS Cluster
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | 1.7.5 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 4.57.1 |
+| <a name="requirement_helm"></a> [helm](#requirement\_helm) | 2.9.0 |
+| <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) | 2.19.0 |
+| <a name="requirement_tls"></a> [tls](#requirement\_tls) | 4.0.4 |
 
 ## Providers
 
@@ -23,21 +29,21 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [helm_release.argo_cd](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) | resource |
-| [kubernetes_certificate_signing_request_v1.dex_server_cert_request](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/certificate_signing_request_v1) | resource |
-| [kubernetes_certificate_signing_request_v1.repo_server_cert_req](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/certificate_signing_request_v1) | resource |
-| [kubernetes_certificate_signing_request_v1.server_cert_request](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/certificate_signing_request_v1) | resource |
-| [kubernetes_secret.argo_server_cert](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/secret) | resource |
-| [kubernetes_secret.argocd-dex-server-tls](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/secret) | resource |
-| [kubernetes_secret.vault_server_cert](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/secret) | resource |
-| [tls_cert_request.dex_server_cert_request](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/cert_request) | resource |
-| [tls_cert_request.repo_server_request](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/cert_request) | resource |
-| [tls_cert_request.server_cert_request](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/cert_request) | resource |
-| [tls_private_key.dex_server_key](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) | resource |
-| [tls_private_key.repo_server_key](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) | resource |
-| [tls_private_key.server_key](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) | resource |
-| [aws_eks_cluster.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/eks_cluster) | data source |
-| [aws_eks_cluster_auth.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/eks_cluster_auth) | data source |
+| [helm_release.argo_cd](https://registry.terraform.io/providers/hashicorp/helm/2.9.0/docs/resources/release) | resource |
+| [kubernetes_certificate_signing_request_v1.dex_server_cert_request](https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/certificate_signing_request_v1) | resource |
+| [kubernetes_certificate_signing_request_v1.repo_server_cert_req](https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/certificate_signing_request_v1) | resource |
+| [kubernetes_certificate_signing_request_v1.server_cert_request](https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/certificate_signing_request_v1) | resource |
+| [kubernetes_secret.argo_server_cert](https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/secret) | resource |
+| [kubernetes_secret.argocd-dex-server-tls](https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/secret) | resource |
+| [kubernetes_secret.vault_server_cert](https://registry.terraform.io/providers/hashicorp/kubernetes/2.19.0/docs/resources/secret) | resource |
+| [tls_cert_request.dex_server_cert_request](https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs/resources/cert_request) | resource |
+| [tls_cert_request.repo_server_request](https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs/resources/cert_request) | resource |
+| [tls_cert_request.server_cert_request](https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs/resources/cert_request) | resource |
+| [tls_private_key.dex_server_key](https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs/resources/private_key) | resource |
+| [tls_private_key.repo_server_key](https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs/resources/private_key) | resource |
+| [tls_private_key.server_key](https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs/resources/private_key) | resource |
+| [aws_eks_cluster.this](https://registry.terraform.io/providers/hashicorp/aws/4.57.1/docs/data-sources/eks_cluster) | data source |
+| [aws_eks_cluster_auth.this](https://registry.terraform.io/providers/hashicorp/aws/4.57.1/docs/data-sources/eks_cluster_auth) | data source |
 
 ## Inputs
 
