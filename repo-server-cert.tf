@@ -39,7 +39,7 @@ resource "kubernetes_secret" "vault_server_cert" {
     namespace = var.namespace
   }
   data = {
-    "ca.crt"  = base64decode(data.aws_eks_cluster.this.certificate_authority[0].data)
+    "ca.crt"  = base64decode(var.cluster_ca)
     "tls.crt" = kubernetes_certificate_signing_request_v1.repo_server_cert_req.certificate
     "tls.key" = tls_private_key.repo_server_key.private_key_pem
   }
